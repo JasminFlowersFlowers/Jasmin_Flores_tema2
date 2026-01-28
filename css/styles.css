@@ -1,0 +1,180 @@
+/* =================================================
+   EJERCICIO 1 – Inicialización HTML5
+   ================================================= */
+header,
+nav,
+main,
+article,
+footer {
+    display: block;
+}
+
+/* =================================================
+   RESET
+   ================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =================================================
+   EJERCICIO 4 – FONDO GENERAL
+   ================================================= */
+html {
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    padding-top: 10px; /* ← aquí aparece el anaranjado */
+    font-family: Verdana, sans-serif;
+    background: linear-gradient(to bottom,
+            rgb(227, 76, 38) 0%,
+            rgba(240, 101, 41, 0) 90%);
+}
+
+/* =================================================
+   CONTENEDOR PRINCIPAL
+   ================================================= */
+#page {
+    width: 960px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px gray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* =================================================
+   HEADER
+   ================================================= */
+header {
+    background: linear-gradient(to bottom, #0170B9, #27AADE);
+    border-bottom: 6px solid black;
+    border-radius: 20px 20px 0 0;
+}
+
+header h1 {
+    color: white;
+    font-family: Courier, monospace;
+    background: url("../imgs/logo.png") no-repeat 25px center;
+    padding: 20px 100px;
+}
+
+/* =================================================
+   NAV
+   ================================================= */
+nav {
+    background: linear-gradient(to bottom,
+            rgb(213, 186, 50),
+            rgb(255, 218, 62));
+    text-align: center;
+    padding: 18px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 100px;
+    padding-top: 80px;
+    font-family: Courier, monospace;
+    font-size: 1.4em;
+}
+
+nav li:first-child {
+    background: url("../imgs/book.png") no-repeat center 10px;
+}
+
+nav li:nth-child(2) {
+    background: url("../imgs/film.png") no-repeat center 10px;
+}
+
+nav li:last-child {
+    background: url("../imgs/mail.png") no-repeat center 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* =================================================
+   MAIN
+   ================================================= */
+main {
+    background-color: white;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+/* =================================================
+   EJERCICIO 5 – ARTICLE (MÓVILES)
+   ================================================= */
+article {
+    float: left;
+    width: 260px;
+    height: 550px;
+    margin: 20px 30px;
+    background: url("../imgs/movil.png") no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+/* =================================================
+   CONTENIDO INTERIOR DEL MÓVIL
+   ================================================= */
+article img {
+    width: 210px;
+    margin-top: 65px;
+}
+
+article p {
+    width: 200px;
+    margin: 10px auto;
+    font-size: 0.7em;
+    line-height: 1.7em;
+}
+
+/* =================================================
+   EJERCICIO 6 – SOMBRA TEXTO
+   ================================================= */
+article h2 {
+    margin: 1px 0;
+    text-shadow: 2px 2px 2px gray;
+}
+
+/* =================================================
+   EJERCICIO 4 – DEGRADADO RADIAL JAVASCRIPT
+   (selector de atributo)
+   ================================================= */
+article img[src*="javascript"] {
+    background: radial-gradient(circle at center,
+            #ffffff 0%,
+            #cecece 200%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* =================================================
+   FOOTER
+   ================================================= */
+footer {
+    clear: both;
+    background: linear-gradient(to top, #0170B9, #27AADE);
+    border-top: 6px solid black;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+}
